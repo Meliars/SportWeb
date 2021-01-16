@@ -1,7 +1,6 @@
 @use '_colors.scss' as *;
 
 html, body {
-    background-color: white;
     min-height: 100%;
  }
 
@@ -21,7 +20,7 @@ html, body {
 
 header p {
     text-align: right;
-    padding-right: 3%;
+    padding-right: 35px;
 }
 
 @font-face {
@@ -35,7 +34,7 @@ header p {
     grid-column-end: 5;
 
     p {
-        color: white;
+        color: $FT-textColor;
         background-color: $FT-color;
     }
 }
@@ -57,7 +56,6 @@ header p {
 
 .style {
     background-color: $FT-color;
-    padding-top: 2%;
     grid-area: style;
     grid-column-start: 2;
     grid-column-end: 4;
@@ -71,18 +69,24 @@ header p {
 
 .content {
     background-color: $primary-color;
-    padding: 1% 3% 2% 3%;
+    padding: 10px 30px 12px 30px;
     grid-area: content;
     grid-column-start: 2;
     grid-column-end: 4;
 
     h1 {
         font-family: rye;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    p {
+        text-align: justify;
     }
 
     small {
             text-align: right;
-            padding-left: 90%;
+            padding-left: 900px;
     }
 
 }
@@ -97,8 +101,8 @@ header p {
         display: inline-block;
     background-color: $primary-color;
     font-family: rye;
-    color: rgb(164, 164, 167);
-    text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
+    color: $navBarColor;
+    text-shadow: $textShadowWhite, $textShadowBlack;
     opacity: 0.7;
     }
 
@@ -109,11 +113,11 @@ header p {
 
     h6 {
         text-align: center;
-        color: rgb(164, 164, 167);
-        text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
+        color: $navBarColor;
+        text-shadow: $textShadowWhite, $textShadowBlack;
         opacity: 0.7;
         font-family: rye;
-        border-bottom: 3px outset rgb(127, 127, 129);
+        border-bottom: 3px outset $navBarBorderColor;
     }
 
 }
@@ -132,7 +136,7 @@ header p {
 }
 
 .nav-menu {
-    border: 7px outset rgb(127, 127, 129);
+    border: 7px outset $navBarBorderColor;
 
 }
 
@@ -143,10 +147,10 @@ header p {
     grid-column-end: 5;
 
     p {
-    color: white;
+    color: $FT-textColor;
     margin-bottom: 0px;
     padding: 0.5%;
-    padding-left: 68%;
+    padding-left: 1045px;
     height: 50px;
     }
 }
