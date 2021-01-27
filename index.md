@@ -1,5 +1,4 @@
 
-    <body>
         <main>
             <header class="banner"><p>Strefa dla osób aktywnych</p></header>
             <div class="logo">
@@ -76,5 +75,3 @@
         </main>
 
         <script type="text/javascript" src="scripts/nav.js"></script>
-
-    </body>
