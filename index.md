@@ -1,4 +1,12 @@
-
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Main page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
         <main>
             <header class="banner"><p>Strefa dla osób aktywnych</p></header>
             <div class="logo">
@@ -75,3 +83,6 @@
         </main>
 
         <script type="text/javascript" src="scripts/nav.js"></script>
+
+    </body>
+</html>
