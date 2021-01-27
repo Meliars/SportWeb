@@ -6,7 +6,7 @@ main {
   display: grid;
   min-height: calc(100vh - 30px);
   grid-template-columns: 200px 1fr 300px 200px;
-  grid-template-rows: 30px 180px 30px auto 60px;
+  grid-template-rows: 30px 180px 30px auto;
   grid-template-areas: "header header header header" ". logo logPane ." ". style style ." "navbar content content ." "footer footer footer footer";
   column-gap: 5px;
 }
@@ -62,12 +62,12 @@ header p {
   grid-column-start: 2;
   grid-column-end: 4;
 }
-.content h1 {
+.content .content__title {
   font-family: rye;
   text-align: center;
   padding-bottom: 20px;
 }
-.content p {
+.content .content__text {
   text-align: justify;
 }
 .content small {
@@ -79,6 +79,17 @@ header p {
   grid-area: navbar;
   display: block;
   background-color: #f2f2f2;
+}
+.navbar .navbar__navMenu {
+  border: 7px outset #7f7f81;
+}
+.navbar .navbar__navMenu h6 {
+  text-align: center;
+  color: #a4a4a7;
+  text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
+  opacity: 0.7;
+  font-family: rye;
+  border-bottom: 3px outset #7f7f81;
 }
 .navbar a {
   display: inline-block;
@@ -92,33 +103,18 @@ header p {
   list-style-type: none;
   padding-left: 0%;
 }
-.navbar h6 {
-  text-align: center;
-  color: #a4a4a7;
-  text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
-  opacity: 0.7;
-  font-family: rye;
-  border-bottom: 3px outset #7f7f81;
-}
 
-.submenu {
+.navbar__submenu {
   display: none;
 }
 
-.sublink:hover .submenu {
+.navbar__sublink:hover .navbar__submenu {
   display: block;
   border-style: none;
 }
 
-.nav-menu {
-  border: 7px outset #7f7f81;
-}
-
 .footer {
   background-color: black;
-  grid-area: footer;
-  grid-column-start: 1;
-  grid-column-end: 5;
 }
 .footer p {
   color: white;

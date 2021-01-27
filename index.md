@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Main page</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/main.css">
@@ -11,24 +12,20 @@
             <header class="banner"><p>Strefa dla osób aktywnych</p></header>
             <div class="logo">
                 <img class="banimg" src="images/banner.png" alt="here is a banner">
-
-            </div>
+                </div>
                 <div class="style">
                 </div>
-
-                <div id="logPane">
-                    <p>Login: <input type="text" placeholder="insert user name" name="uname" required></p>
-                    <p>Hasło: <input type="password" placeholder="insert password" name="upass" required></p>
-                    <button title="Login">Zaloguj</button>
+                <form id="logPane">
+                    <label>Login: <input class="logPane__input" type="text" placeholder="insert user name" name="uname" required></label>
+                    <label>Hasło: <input class="logPane__input logPane__input--password" type="password" placeholder="insert password" name="upass" required></label>
+                    <button class="logPane__button" type="submit" title="Login">Zaloguj</button>
                     <a>Wciąż nie masz konta? <a href="#">Zarejestruj się!</a></a>
-                </div>
-
-
+                </form>
             <article class="content">
-                <header>
+                <header class="content__title">
                     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                     </header>
-                        <div class="text">
+                        <div class="content__text">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet provident a cupiditate reprehenderit quod sint pariatur omnis aliquam eum, doloremque animi repudiandae iusto dicta enim laboriosam autem ab iste. Dicta.</p>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores odit beatae maxime similique quae deleniti unde ex consequatur explicabo minus sed, quod, ducimus pariatur dolorem eum in tempora eveniet veritatis.
                             Saepe velit nihil explicabo quo. Nulla maxime doloremque dicta et dolore corrupti ipsum aut ratione eligendi quia blanditiis saepe quam ex consequatur exercitationem optio commodi adipisci, ipsa placeat fuga illum.
@@ -42,32 +39,27 @@
                             <time datetime="2020-05-05T11:20:00"><small>2021-01-11 14:05</small></time>
                         </div>
             </article>
-
             <nav class="navbar">
-                <div class="nav-menu">
+                <div class="navbar__navMenu">
                     <h6>Menu nawigacyjne</h6>
-
                     <ul>
-                     <li class="sublink">
+                     <li class="navbar__sublink">
                             <a href="#">link1
-
-                             <ul class="submenu">
+                             <ul class="navbar__submenu">
                                     <li>Link1</li>
                                 </ul>
                             </a>
                         </li>
-                        <li class="sublink">
+                        <li class="navbar__sublink">
                             <a href="#">link2
-
-                             <ul class="submenu">
+                             <ul class="navbar__submenu">
                                     <li>Link1</li>
                                 </ul>
                             </a>
                      </li>
-                     <li class="sublink">
+                     <li class="navbar__sublink">
                          <a href="#">link3
-
-                             <ul class="submenu">
+                             <ul class="navbar__submenu">
                                     <li>Link1</li>
                                 </ul>
                             </a>
@@ -75,14 +67,10 @@
                     </ul>
                 </div>
             </nav>
-
-            <footer class="footer">
-                <p>Masz sugestie odnośnie działania serwisu? Napisz do mnie <a href="mail@gmail.com"><img src="images/e-mail.png" alt="odsyłacz obrazkowy"></a></p>
-
-            </footer>
         </main>
-
+        <footer class="footer">
+            <p>Masz sugestie odnośnie działania serwisu? Napisz do mnie <a href="mail@gmail.com"><img src="images/e-mail.png" alt="odsyłacz obrazkowy"></a></p>
+        </footer>
         <script type="text/javascript" src="scripts/nav.js"></script>
-
     </body>
 </html>
