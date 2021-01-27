@@ -12,7 +12,7 @@
             <header class="banner"><p>Strefa dla osób aktywnych</p></header>
             <div class="logo">
                 <img class="banimg" src="images/banner.png" alt="here is a banner">
-                </div>
+            </div>
                 <div class="style">
                 </div>
                 <form id="logPane">

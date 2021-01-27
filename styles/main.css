@@ -1,148 +1,128 @@
-main {
-  border: 1px solid red;
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
+}
 
+main {
+  min-height: calc(100vh - 30px);
 }
 
 header p {
   text-align: right;
-  padding-right: 3%;
+  padding-right: 35px;
 }
 
 @font-face {
-  font-family: 'rye';
+  font-family: "rye";
   src: url(../font/Rye-Regular.ttf);
 }
-
-.banner {
-  order: 1;
-  border: 1px solid black;
-  width: 100%;
-}
-
 .banner p {
-
   color: white;
   background-color: black;
 }
 
-.logo{
-  border: 1px solid black;
-  order: 2;
-  width: 850px;
-  align-self: stretch;
-
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 5px;
 }
-
-.banimg {
-  width:600px;
+.logo .logo_banimg {
+  width: 650px;
   height: 150px;
-
+}
+.logo #logo_logPane {
+  margin: 5px;
+  width: 250px;
 }
 
 .style {
-  order: 3;
-  /* align-self: center; */
   background-color: black;
-  padding-top: 2%;
-  width: 50%;
-  height: 5%;
+  height: 30px;
+  width: 1120px;
+  margin: 0px;
 }
 
-#logPane {
-  border: 1px solid black;
-  order: 2;
-
-
+.contentNavbar {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin-top: 0px;
 }
-
-.content {
-  order: 4;
-  align-self: center;
-  width: 60%;
+.contentNavbar .contentNavbar__content {
+  width: 1120px;
   background-color: #f2f2f2;
-  padding: 1% 3% 2% 3%;
+  padding: 10px 30px 12px 30px;
+  margin-top: 0px;
 }
-
-time {
-  text-align: right;
-}
-
-.content h1{
+.contentNavbar .contentNavbar__content .contentNavbar__content__title {
   font-family: rye;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 10px;
 }
-
-.content .text small {
+.contentNavbar .contentNavbar__content .contentNavbar__content__text {
+  text-align: justify;
+}
+.contentNavbar .contentNavbar__content small {
   text-align: right;
-  padding-left: 90%;
-  }
-
-  .navbar {
-    order: 4;
-    margin: 5px;
-    border: 1px solid black;
-    display: block;
-    /* border: 1px solid black; */
-    background-color: #f2f2f2;
-
+  padding-left: 900px;
 }
-
-.navbar a{
-  display: inline-block;
-  background-color:  #f2f2f2;
-  font-family: rye;
-  color: rgb(164, 164, 167);
+.contentNavbar .contentNavbar__navbar {
+  display: block;
+  background-color: #f2f2f2;
+  height: 1fr;
+  width: 190px;
+  margin: 5px;
+}
+.contentNavbar .contentNavbar__navbar .contentNavbar__navbar__navMenu {
+  border: 7px outset #7f7f81;
+  margin: 10px;
+}
+.contentNavbar .contentNavbar__navbar .contentNavbar__navbar__navMenu h6 {
+  text-align: center;
+  color: #a4a4a7;
   text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
   opacity: 0.7;
-
-
+  font-family: rye;
+  border-bottom: 3px outset #7f7f81;
 }
-
-.navbar li {
+.contentNavbar .contentNavbar__navbar a {
+  display: inline-block;
+  background-color: #f2f2f2;
+  font-family: rye;
+  color: #a4a4a7;
+  text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
+  opacity: 0.7;
+}
+.contentNavbar .contentNavbar__navbar li {
   list-style-type: none;
   padding-left: 0%;
-
 }
 
-.navbar h6{
-  text-align: center;
-  color: rgb(164, 164, 167);
-  text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
-  opacity: 0.7;
-  font-family: rye;
-  border-bottom: 3px outset rgb(127, 127, 129);
-}
-
-.submenu {
+.contentNavbar__navbar__submenu {
   display: none;
-
 }
 
-.sublink:hover .submenu {
+.contentNavbar__navbar__sublink:hover .contentNavbar__navbar__submenu {
   display: block;
   border-style: none;
-
-
-}
-
-.nav-menu {
-  border: 7px outset rgb(127, 127, 129);
-
 }
 
 .footer {
-  width: 100%;
   background-color: black;
-
 }
-
 .footer p {
-  order: 5;
   color: white;
   margin-bottom: 0px;
   padding: 0.5%;
-  padding-left: 68%;
+  padding-left: 1045px;
   height: 50px;
-
 }
+
+/*# sourceMappingURL=main.css.map */

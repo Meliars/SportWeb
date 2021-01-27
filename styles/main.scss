@@ -2,20 +2,15 @@
 
 html, body {
     min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
  }
 
  main {
-    display: grid;
     min-height: calc(100vh - 30px);
-    grid-template-columns: 200px 1fr 300px 200px;
-    grid-template-rows: 30px 180px 30px auto;
-    grid-template-areas:
-    'header header header header'
-    '. logo logPane .'
-    '. style style .'
-    'navbar content content .'
-    'footer footer footer footer';
-    column-gap: 5px;
+
 }
 
 header p {
@@ -29,9 +24,6 @@ header p {
 }
 
 .banner {
-    grid-area: header;
-    grid-column-start: 1;
-    grid-column-end: 5;
 
     p {
         color: $FT-textColor;
@@ -40,47 +32,55 @@ header p {
 }
 
 .logo {
-    grid-area: logo;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     margin: 5px;
-    grid-column-start: 2;
-    grid-column-end: 3;
 
-
+    .logo_banimg {
+        width:650px;
+        height: 150px;
+    }
+    #logo_logPane {
+        margin: 5px;
+        width: 250px;
+    }
 }
 
-.banimg {
-    width:600px;
-    height: 150px;
-
-}
 
 .style {
     background-color: $FT-color;
-    grid-area: style;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    height: 30px;
+    width: 1120px;
+    margin: 0px;
+
 }
 
-#logPane {
-    grid-area: logPane;
-    margin: 5px;
-    width: 1fr;
-}
 
-.content {
+.contentNavbar {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-top: 0px;
+
+
+    .contentNavbar__content {
+    width: 1120px;
     background-color: $primary-color;
     padding: 10px 30px 12px 30px;
-    grid-area: content;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    margin-top: 0px;
 
-    .content__title {
+
+    .contentNavbar__content__title {
         font-family: rye;
         text-align: center;
         padding-bottom: 20px;
+        margin-top: 10px;
     }
 
-    .content__text {
+    .contentNavbar__content__text {
         text-align: justify;
     }
 
@@ -90,15 +90,17 @@ header p {
     }
 
 }
+    .contentNavbar__navbar {
 
-
-.navbar {
-    grid-area: navbar;
     display: block;
     background-color: $primary-color;
+    height: 1fr;
+    width: 190px;
+    margin: 5px;
 
-    .navbar__navMenu {
+    .contentNavbar__navbar__navMenu {
         border: 7px outset $navBarBorderColor;
+        margin: 10px;
 
         h6 {
             text-align: center;
@@ -128,13 +130,15 @@ header p {
 
 }
 
+}
 
-.navbar__submenu {
+
+.contentNavbar__navbar__submenu {
     display: none;
 
 }
 
- .navbar__sublink:hover .navbar__submenu {
+ .contentNavbar__navbar__sublink:hover .contentNavbar__navbar__submenu {
     display: block;
     border-style: none;
 
