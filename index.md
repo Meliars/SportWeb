@@ -11,19 +11,15 @@
             <header class="banner"><p>Strefa dla osób aktywnych</p></header>
             <div class="logo">
                 <img class="banimg" src="images/banner.png" alt="here is a banner">
-
             </div>
                 <div class="style">
                 </div>
-
                 <div id="logPane">
                     <p>Login: <input type="text" placeholder="insert user name" name="uname" required></p>
                     <p>Hasło: <input type="password" placeholder="insert password" name="upass" required></p>
                     <button title="Login">Zaloguj</button>
                     <a>Wciąż nie masz konta? <a href="#">Zarejestruj się!</a></a>
                 </div>
-
-
             <article class="content">
                 <header>
                     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
@@ -42,15 +38,12 @@
                             <time datetime="2020-05-05T11:20:00"><small>2021-01-11 14:05</small></time>
                         </div>
             </article>
-
             <nav class="navbar">
                 <div class="nav-menu">
                     <h6>Menu nawigacyjne</h6>
-
                     <ul>
                      <li class="sublink">
                             <a href="#">link1
-
                              <ul class="submenu">
                                     <li>Link1</li>
                                 </ul>
@@ -58,7 +51,6 @@
                         </li>
                         <li class="sublink">
                             <a href="#">link2
-
                              <ul class="submenu">
                                     <li>Link1</li>
                                 </ul>
@@ -66,7 +58,6 @@
                      </li>
                      <li class="sublink">
                          <a href="#">link3
-
                              <ul class="submenu">
                                     <li>Link1</li>
                                 </ul>
@@ -75,14 +66,11 @@
                     </ul>
                 </div>
             </nav>
-
             <footer class="footer">
                 <p>Masz sugestie odnośnie działania serwisu? Napisz do mnie <a href="mail@gmail.com"><img src="images/e-mail.png" alt="odsyłacz obrazkowy"></a></p>
-
             </footer>
         </main>
-
-        <script type="text/javascript" src="scripts/nav.js"></script>
-
+        <script type="text/javascript" src="scripts/vendor.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
     </body>
 </html>
