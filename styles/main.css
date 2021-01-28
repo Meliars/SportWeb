@@ -28,23 +28,18 @@ header p {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-between;
   margin: 5px;
 }
 .logo .logo_banimg {
   width: 650px;
   height: 150px;
+  margin-left: 190px;
 }
 .logo #logo_logPane {
   margin: 5px;
   width: 250px;
-}
-
-.style {
-  background-color: black;
-  height: 30px;
-  width: 1120px;
-  margin: 0px;
+  margin-right: 190px;
 }
 
 .contentNavbar {
@@ -57,17 +52,23 @@ header p {
 .contentNavbar .contentNavbar__content {
   width: 1120px;
   background-color: #f2f2f2;
-  padding: 10px 30px 12px 30px;
   margin-top: 0px;
+}
+.contentNavbar .contentNavbar__content .contentNavbar__content__style {
+  background-color: black;
+  height: 30px;
+  width: 1120px;
 }
 .contentNavbar .contentNavbar__content .contentNavbar__content__title {
   font-family: rye;
   text-align: center;
   padding-bottom: 20px;
   margin-top: 10px;
+  padding: 10px 30px 12px 30px;
 }
 .contentNavbar .contentNavbar__content .contentNavbar__content__text {
   text-align: justify;
+  padding: 10px 30px 12px 30px;
 }
 .contentNavbar .contentNavbar__content small {
   text-align: right;
@@ -76,7 +77,6 @@ header p {
 .contentNavbar .contentNavbar__navbar {
   display: block;
   background-color: #f2f2f2;
-  height: 1fr;
   width: 190px;
   margin: 5px;
 }

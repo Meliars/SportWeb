@@ -9,6 +9,7 @@ html, body {
  }
 
  main {
+
     min-height: calc(100vh - 30px);
 
 }
@@ -35,27 +36,23 @@ header p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     margin: 5px;
 
     .logo_banimg {
         width:650px;
         height: 150px;
+        margin-left: 190px;
     }
     #logo_logPane {
         margin: 5px;
         width: 250px;
+        margin-right: 190px;
     }
 }
 
 
-.style {
-    background-color: $FT-color;
-    height: 30px;
-    width: 1120px;
-    margin: 0px;
 
-}
 
 
 .contentNavbar {
@@ -69,19 +66,27 @@ header p {
     .contentNavbar__content {
     width: 1120px;
     background-color: $primary-color;
-    padding: 10px 30px 12px 30px;
     margin-top: 0px;
 
+    .contentNavbar__content__style {
+    background-color: $FT-color;
+    height: 30px;
+    width: 1120px;
+
+    }
 
     .contentNavbar__content__title {
         font-family: rye;
         text-align: center;
         padding-bottom: 20px;
         margin-top: 10px;
+        padding: 10px 30px 12px 30px;
+
     }
 
     .contentNavbar__content__text {
         text-align: justify;
+        padding: 10px 30px 12px 30px;
     }
 
     small {
@@ -94,7 +99,6 @@ header p {
 
     display: block;
     background-color: $primary-color;
-    height: 1fr;
     width: 190px;
     margin: 5px;
 
