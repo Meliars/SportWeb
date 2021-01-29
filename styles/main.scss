@@ -64,7 +64,7 @@ header p {
 
 #logPane {
     grid-area: logPane;
-    padding-top: 15px;
+    margin-top: 15px;
     width: 1fr;
 }
 
@@ -129,20 +129,17 @@ header p {
 
 }
 
+.navbar {
 
-.navbar__submenu {
-    display: none;
-
+    .navbar__submenu {
+        display: none;
+    }
+    .navbar__sublink:hover .navbar__submenu {
+        display: block;
+        border-style: none;
 }
 
- .navbar__sublink:hover .navbar__submenu {
-    display: block;
-    border-style: none;
-
-
-
 }
-
 
 .footer {
     background-color: $FT-color;
