@@ -15,9 +15,9 @@
                 <div class="style">
                 </div>
                 <div id="logPane">
-                    <p>Login: <input type="text" placeholder="insert user name" name="uname" required></p>
-                    <p>Hasło: <input type="password" placeholder="insert password" name="upass" required></p>
-                    <button title="Login">Zaloguj</button>
+                    <label>Login: <input type="text" placeholder="insert user name" name="uname" required id="logPane--userName"></label>
+                    <label>Hasło: <input type="password" placeholder="insert password" name="upass" required id="logPane--password"></label>
+                    <button title="Login" id="logPane__loginInput">Zaloguj</button>
                     <a>Wciąż nie masz konta? <a href="#">Zarejestruj się!</a></a>
                 </div>
             <article class="content">
@@ -51,6 +51,7 @@
                         </li>
                         <li class="sublink">
                             <a href="#">link2
+
                              <ul class="submenu">
                                     <li>Link1</li>
                                 </ul>
@@ -66,10 +67,10 @@
                     </ul>
                 </div>
             </nav>
+        </main>
             <footer class="footer">
                 <p>Masz sugestie odnośnie działania serwisu? Napisz do mnie <a href="mail@gmail.com"><img src="images/e-mail.png" alt="odsyłacz obrazkowy"></a></p>
             </footer>
-        </main>
         <script type="text/javascript" src="scripts/vendor.js"></script>
         <script type="text/javascript" src="scripts/app.js"></script>
     </body>
