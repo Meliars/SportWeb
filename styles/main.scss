@@ -45,14 +45,15 @@ header p {
     grid-column-start: 2;
     grid-column-end: 3;
 
+    .logo__banimg {
+        width:600px;
+        height: 150px;
+
+    }
+
 
 }
 
-.banimg {
-    width:600px;
-    height: 150px;
-
-}
 
 .style {
     background-color: $FT-color;
@@ -63,7 +64,7 @@ header p {
 
 #logPane {
     grid-area: logPane;
-    margin: 5px;
+    padding-top: 15px;
     width: 1fr;
 }
 
