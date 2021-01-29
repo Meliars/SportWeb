@@ -1,12 +1,11 @@
 @use '_colors.scss' as *;
 
 html, body {
-    min-height: 100%;
+    min-height: calc(100vh - 30px);
  }
 
  main {
     display: grid;
-    min-height: calc(100vh - 30px);
     grid-template-columns: 200px 1fr 300px 200px;
     grid-template-rows: 30px 180px 30px auto;
     grid-template-areas:
@@ -98,7 +97,7 @@ header p {
     display: block;
     background-color: $primary-color;
 
-    .navbar__navMenu {
+    .nav-menu {
         border: 7px outset $navBarBorderColor;
 
         h6 {
@@ -131,10 +130,10 @@ header p {
 
 .navbar {
 
-    .navbar__submenu {
+    .submenu {
         display: none;
     }
-    .navbar__sublink:hover .navbar__submenu {
+    .sublink:hover .submenu {
         display: block;
         border-style: none;
 }

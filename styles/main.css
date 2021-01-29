@@ -1,10 +1,9 @@
 html, body {
-  min-height: 100%;
+  min-height: calc(100vh - 30px);
 }
 
 main {
   display: grid;
-  min-height: calc(100vh - 30px);
   grid-template-columns: 200px 1fr 300px 200px;
   grid-template-rows: 30px 180px 30px auto;
   grid-template-areas: "header header header header" ". logo logPane ." ". style style ." "navbar content content ." "footer footer footer footer";
@@ -79,10 +78,10 @@ header p {
   display: block;
   background-color: #f2f2f2;
 }
-.navbar .navbar__navMenu {
+.navbar .nav-menu {
   border: 7px outset #7f7f81;
 }
-.navbar .navbar__navMenu h6 {
+.navbar .nav-menu h6 {
   text-align: center;
   color: #a4a4a7;
   text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
@@ -103,10 +102,10 @@ header p {
   padding-left: 0%;
 }
 
-.navbar .navbar__submenu {
+.navbar .submenu {
   display: none;
 }
-.navbar .navbar__sublink:hover .navbar__submenu {
+.navbar .sublink:hover .submenu {
   display: block;
   border-style: none;
 }
