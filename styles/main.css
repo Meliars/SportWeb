@@ -36,8 +36,7 @@ header p {
   grid-column-start: 2;
   grid-column-end: 3;
 }
-
-.banimg {
+.logo .logo__banimg {
   width: 600px;
   height: 150px;
 }
@@ -51,7 +50,7 @@ header p {
 
 #logPane {
   grid-area: logPane;
-  margin: 5px;
+  margin-top: 20px;
   width: 1fr;
 }
 
@@ -104,11 +103,10 @@ header p {
   padding-left: 0%;
 }
 
-.navbar__submenu {
+.navbar .navbar__submenu {
   display: none;
 }
-
-.navbar__sublink:hover .navbar__submenu {
+.navbar .navbar__sublink:hover .navbar__submenu {
   display: block;
   border-style: none;
 }
