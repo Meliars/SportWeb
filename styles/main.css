@@ -5,7 +5,7 @@ html, body {
 main {
   display: grid;
   grid-template-columns: 200px 1fr 300px 200px;
-  grid-template-rows: 30px 180px 30px auto;
+  grid-template-rows: 30px 180px 30px auto 60px;
   grid-template-areas: "header header header header" ". logo logPane ." ". style style ." "navbar content content ." "footer footer footer footer";
   column-gap: 5px;
 }
@@ -110,10 +110,11 @@ header p {
   border-style: none;
 }
 
-.footer {
+.wrapper {
+  grid-area: footer;
   background-color: black;
 }
-.footer p {
+.wrapper p {
   color: white;
   margin-bottom: 0px;
   padding: 0.5%;
